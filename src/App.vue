@@ -7,12 +7,13 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <div class="navbar">
-      <div class="logo">OJLab</div>
+      <div class="logo"><img src="../src/assets/icon.jpg">OJLab</div>
 
       <div class="nav-buttons">
         <RouterLink to="/">首页</RouterLink>
         <a href="https://love-oj.github.io/OJ/" target="_blank" rel="noopener noreferrer">纳新简章</a>
         <RouterLink to="/form">简历投递</RouterLink>
+        <RouterLink to="/receive">查看简历</RouterLink>
 
       </div>
     </div>
@@ -63,6 +64,12 @@ body {
 .navbar .logo {
   font-size: 24px;
   font-weight: bold;
+}
+
+.navbar .logo img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; /* 调整图片和文字的间距 */
 }
 
 .navbar .nav-buttons {
